@@ -11,9 +11,9 @@ namespace TVTransformerTests
         {
             // Find information about AtataContext set-up on https://atata.io/getting-started/#set-up
             AtataContext.Configure().
-                //UseChrome().
-                //    WithArguments("start-maximized").
-                //UseBaseUrl("SITE_URL").
+                UseChrome().
+                WithArguments("start-maximized").
+                UseBaseUrl("https://planeta.tc/").
                 UseCulture("en-us").
                 UseNUnitTestName().
                 AddNUnitTestContextLogging().
